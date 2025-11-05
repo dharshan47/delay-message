@@ -15,6 +15,7 @@ const InputMessage = () => {
     const timer = setTimeout(() => {
       setSendMessage(message);
       setMessage("");
+      setDelay(0)
       setIsSending(false);
     }, delay * 1000);
     setTime(timer);
